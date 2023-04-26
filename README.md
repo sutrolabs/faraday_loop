@@ -4,7 +4,7 @@ Ever need a nice way to retry a block of code? Maybe you need a maximum number o
 
 Faraday has one!
 
-While Faraday is one nice piece of kit, you might not be in the market though for an http client like Faraday and all of its Middelware.
+But, while Faraday is one nice piece of kit, you might not be in the market though for an http client like Faraday and all of its Middelware.
 
 So we took the Farday Retry Middleware, and just simply cloned it into it's own utility.
 
