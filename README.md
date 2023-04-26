@@ -53,8 +53,18 @@ retry_utility = FaradayLoop::Retry.new(
 Finally, wrap the operation you want to retry in a block:
 
 ```ruby
-retry_utility.perform do
+retry_utility.call do
   # Your operation that might fail and require retries
+end
+```
+
+You can also shortcut this with:
+
+```ruby
+retry_utility = FaradayLoop::Retry(
+  options
+).retry do
+    # Your operation that might fail and require retries
 end
 ```
 
