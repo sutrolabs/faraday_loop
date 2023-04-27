@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "faraday_loop"
   spec.version = FaradayLoop::VERSION
   spec.authors = ["n8"]
-  spec.email = ["nate.kontny@gmail.com"]
+  spec.email = ["nate@getcensus.com"]
 
   spec.summary = "A lightweight, generic retry utility extracted from the Faraday Ruby project"
   spec.description = "Faraday Loop provides an easy-to-use mechanism for retrying failed operations in any Ruby application, independent of the full Faraday library."
