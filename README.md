@@ -1,4 +1,4 @@
-# FaradayLoop
+# Faraday Loop
 
 Ever need a nice way to retry a block of code? Maybe you need a maximum number of retries? Exponential backoff? Different handling for different exceptions?
 
