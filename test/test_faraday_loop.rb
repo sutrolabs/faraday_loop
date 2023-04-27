@@ -8,6 +8,9 @@ class TestFaradayLoop < Minitest::Test
   end
 
   def test_call
+    failed_once = false
+    succeeded_once = false
+
     retry_utility = FaradayLoop::Retry.new(
       max: 10,
       interval: 1,
@@ -17,21 +20,34 @@ class TestFaradayLoop < Minitest::Test
     )
 
     retry_utility.call do
-      raise StandardError.new("Random error occurred") if rand <= 0.5
+      if !failed_once
+        failed_once = true
+        raise StandardError.new("error occurred")
+      end
+
+      succeeded_once = true
     end
 
-    assert true
+    assert succeeded_once
   end
 
   def test_call_shortcut
+    failed_once = false
+    succeeded_once = false
+
     FaradayLoop::Retry.retry(
-      max: 0,
+      max: 1,
       interval: 0,
     ) do
-      raise StandardError.new("Random error occurred") if rand <= 0.5
 
-      assert true
+      if !failed_once
+        failed_once = true
+        raise StandardError.new("error occurred")
+      end
+
+      succeeded_once = true
     end
-  end
 
+    assert succeeded_once
+  end
 end
