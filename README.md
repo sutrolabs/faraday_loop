@@ -1,14 +1,14 @@
 # Faraday Loop
 
-Ever need a nice way to retry a block of code? Maybe you need a maximum number of retries? Exponential backoff? Different handling for different exceptions?
+Ever need a simple way to retry a block of code? Maybe you need a maximum number of retries? Exponential backoff? Different handling for different exceptions?
 
 [Faraday](https://github.com/lostisland/faraday) has one!
 
 But, while Faraday is one nice piece of kit, you might not be in the market for an http client like Faraday and all of its Middelware.
 
-So we took the [Farday Retry Middleware](https://github.com/lostisland/faraday-retry), and just simply cloned it into its own utility.
+So we took the [Faraday Retry Middleware](https://github.com/lostisland/faraday-retry), and just simply cloned it into its own utility.
 
-## Installation
+#### Installation
 
 Install the gem and add to the application's Gemfile by executing:
 
@@ -18,7 +18,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install faraday_loop
 
-## Usage
+#### Usage
 
 You'll first need to require it:
 
@@ -68,16 +68,14 @@ retry_utility = FaradayLoop::Retry(
 end
 ```
 
-## License
+#### License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-Feedback
---------
+#### Feedback
 [Source code available on Github](https://github.com/sutrolabs/faraday_loop). Feedback and pull requests are greatly appreciated. Let us know if we can improve this.
 
-From
------------
-:wave: The folks at lotisland really made this: https://github.com/lostisland/faraday-retry. We at [Census](http://getcensus.com) just hoisted it up.
+#### From
+:wave: The folks at [lotisland](https://github.com/lostisland/faraday-retry) really made this. We at [Census](http://getcensus.com) just hoisted it up.
 
 Interested in other things we do? **[Come work with us](https://www.getcensus.com/careers)**.
