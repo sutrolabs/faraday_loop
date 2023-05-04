@@ -76,6 +76,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 [Source code available on Github](https://github.com/sutrolabs/faraday_loop). Feedback and pull requests are greatly appreciated. Let us know if we can improve this.
 
 #### From
-:wave: The folks at [lotisland](https://github.com/lostisland/faraday-retry) really made this. We at [Census](http://getcensus.com) just hoisted it up.
+:wave: The folks at [lostisland](https://github.com/lostisland/faraday-retry) really made this. We at [Census](http://getcensus.com) just hoisted it up.
 
 Interested in other things we do? **[Come work with us](https://www.getcensus.com/careers)**.
